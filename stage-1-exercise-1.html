@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!-- This line is a test of an HTML comment. -->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Murray's First Project</title>
+  <link rel="stylesheet" type="text/css" href="stage-1-exercise-1.css">
+</head>
+<body>
+<div class="chapter">
+<h1>STAGE 0 (Web Basics) NOTES</h1>
+
+<h2>How the Web Works</h2>
+<ol>
+  <li>Person (using...)</li>
+  <li>PC/laptop with browser (talking HTTP to...)</li>
+  <li>Internet (talking HTTP to...)</li>
+  <li>Servers</li>
+  </ol>
+<h2>HTML Elements</h2>
+<p> An element usually consists of:</p>
+  <blockquote>
+  &lt;opening tag&gt; content &lt;/closing tag&gt;
+  </blockquote>
+<p>In some cases an element may be a "void tag", where there is no content, nor a closing tag. EG the BReak tag</p>
+<p>Elements may be inline or block oriented.</p>
+<p>Tags consist of a mnemonic surrounded by a leading "less than" symbol and followed by a "greater than" symbol. The closing tag has a "forward slash" symbol preceding the mnemonic. Some opening tags have Atrributes that modify their behaviour - these appear after the mnemonic and before the closing "greater than" symbol.</p>
+<p> In the following list, the menemonic of the tag is given, followed by an indication of whether it is inline or block oriented in partentheses. This is followed with a short description of what the tag does. Where Attribute(s) are known they are listed on succeeding lines.</p>
+<div class="html-tags">
+<ul>
+  <li><b>b</b> (i) Bold</li>
+   <li><b>em</b> (i) EMphasis, italics</li>
+   <li><b>a</b> (i) Anchor; link to other stuff
+    <ul>
+      <li>href="url" where to go to</li>
+    </ul>
+   <li><b>img</b> (i) IMaGe; include a picture here
+    <ul>
+      <li>src="ref" where to find the picture</li>
+      <li>alt="text" description of the picture</li>
+    </ul>
+   <li><b>br</b> (i) BReak; start a new line; [VOID Tag]</li>
+   <li><b>p</b> (b) Paragraph</li>
+   <li><b>div</b> (b) create a block of stuff, a DIVision</li>
+   <li><b>span</b> (i) create a block of stuff that SPANs from here to the closing tag</li>
+   <li><b>strong</b> (i) provide STRONG emphasis to text</li>
+   <li><b>form</b> (b) create a FORM</li>
+   <li><b>head</b> (b) create a HEADing for the document</li>
+   <li><b>body</b> (b) create the BODY of the document</li>
+   <li><b>html</b> (b) the defifinition of the entire HTML document</li>
+  <li><b>h1</b>...<b>h6</b> (i) Heading levels 1...6</li>
+  <li><b>ol</b> (i?) Ordered List</li>
+  <li><b>ul</b> (i?) Unordered List</li>
+  <li><b>li</b> (i) LIst element</li>
+  <li><b>link</b>(i) LINK to style file or other content, but only within the HEAD tag</li>
+  <li><b>style</b>(i) STYLE definitions (ie CSS code), but only within the HEAD tag</li>
+  <li><b>blockquote</b> (b) create a BLOCK of QUOTation tExt
+  <br>
+  <b>NOTE:</b> This tag seems to have the implicit function of terminating a Paragraph block, resulting in a hanging end of Paragraph tag.
+  </li>
+</ul>
+</div>
+</div>
+<div class="chapter">
+<h1>STAGE 1 (STRUCTURE) NOTES</h1>
+<p>A page is organized as a set of boxes.
+Boxes have content.
+Elements (particularly block oriented ones) can be treated as boxes.
+Boxes have locations, sizes, colours, borders and other characteristics.
+Boxes are placed on a grid.</p>
+<p>Style is applied to boxes to change their sizes, colours and so forth.
+Style can be applied via stuff in the HEAD section - for simple projects.
+Style can instead/usually be applied by means of an external file (type CSS) via a LINK in the HEAD section.</p>
+<blockquote>
+<b>NOTES:</b>
+<br>&nbsp;&nbsp;DO NOT use a fully specified disk reference as Netscape failes to interpret it correctly; place the CSS file in the same directory as the HTML file.
+<br>&nbsp;&nbsp;DO NOT use spaces in file references.
+</blockquote>
+<p>Boxes can have boxes inside them.
+This nesting is reflected by indentation of the code.</p>
+<p>Use a language-specific editor to facilitate syntactically correct writing of HTML (and CSS) code.</p>
+<p>Boxes have 4 sizing characteristics (from inside layer to outside): content, padding, border, margin.</p>
+<p>The CSS attribute Box-sizing: border-box saves having to compute the sum of the various parts and lets you specify just one size for the inner three layers. Specify sizes in pixels (PX) or percent.</p>
+<p>Div takes the full width of a page. The attrribute (in CSS) Display:Flex allows the blocks to be positioned beside each other.</p>
+</div>
+<div class="checks">
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+<p>&nbsp;</p>
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
+</div>
+</body>
+</html>
